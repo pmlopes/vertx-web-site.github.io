@@ -28,3 +28,5 @@ footer{margin-top:16em}
 
 .page-content{margin-top:6em}
 
+@keyframes logos-row-slide{from{transform:translateX(0%)}to{transform:translateX(-50%)}}.logos{position:relative;white-space:nowrap;max-width:100%;overflow-x:hidden;margin-top:5rem}.logos h3{text-align:center;margin-top:3rem}.logos hr{border:none;border-top:1px solid #dee2e6}.logos .logos-contact-us{text-align:center;margin-top:2rem;margin-bottom:4rem}.logos .logos-contact-us .button{margin-left:.75rem;line-height:1.25rem;padding-top:.60606rem}.logos .logos-row-divider{height:0}.logos .logos-row{display:inline-block;height:2rem;margin-top:2rem;margin-bottom:2rem;white-space:nowrap;animation:logos-row-slide 80s infinite linear;will-change:transform}.logos .logos-row-divider+.logos-row{animation:logos-row-slide 100s infinite linear}.logos .logos-row-half{height:100%;display:inline-block}.logos .logos-logo{object-fit:contain;max-width:11rem;max-height:100%;margin:0 2.5rem;filter:grayscale(100);opacity:.75;transition:all .15s ease-in-out}.logos .logos-logo svg{height:100px}.logos .logos-logo:hover{filter:grayscale(0);opacity:1}
+
