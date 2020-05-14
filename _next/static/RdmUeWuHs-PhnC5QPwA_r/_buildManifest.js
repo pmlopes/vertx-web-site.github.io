@@ -1,1 +1,0 @@
-self.__BUILD_MANIFEST = (function(a){return {"/":[a],"/docs":[a],"/docs/[...slug]":[a],"/get-started":[a],"/index":[a],"/introduction-to-vertx-and-reactive":[a]}}("static\u002Fchunks\u002F9f955b8b773857b1a3f524b7f94f083bcbf6561f.6bf4bd5a77c1f3190adb.js"));self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

@@ -1,0 +1,215 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="description" content="Vert.x | Reactive applications on the JVM"/><meta name="robots" content="index,follow"/><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&amp;display=swap" rel="stylesheet"/><title>Easy SSO for Vert.x with Keycloak | Blog | Eclipse Vert.x</title><meta name="next-head-count" content="9"/><link rel="preload" href="/_next/static/css/styles.a8e7442d.chunk.css" as="style"/><link rel="stylesheet" href="/_next/static/css/styles.a8e7442d.chunk.css"/><link rel="preload" href="/_next/static/01qy_q7XJ95-UZlSeqei2/pages/blog/%5Bslug%5D.js" as="script"/><link rel="preload" href="/_next/static/01qy_q7XJ95-UZlSeqei2/pages/_app.js" as="script"/><link rel="preload" href="/_next/static/runtime/webpack-9369c5c69dbf6d4912cb.js" as="script"/><link rel="preload" href="/_next/static/chunks/framework.5fcc7199ef0beb206d2f.js" as="script"/><link rel="preload" href="/_next/static/chunks/commons.5e3e47f192c8968126d4.js" as="script"/><link rel="preload" href="/_next/static/chunks/styles.b3051b078ef01028e031.js" as="script"/><link rel="preload" href="/_next/static/runtime/main-4c61e95228a4db0f3c64.js" as="script"/><link rel="preload" href="/_next/static/chunks/dde3394baf3740af1d1004db0a7c013ea3b6815e.fd1a76189763e4571dc7.js" as="script"/><link rel="preload" href="/_next/static/chunks/3f839b7cabd476c8a8af1b841ce6ff62cb71f462.d12c45c80eacc668aca4.js" as="script"/></head><body><div id="__next"><main class="page"><header><div class="navbar"><div class="navbar-content container"><div class="navbar-logo"><a href="/"><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMTI1LjYgMzE1LjIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZT4uc3Qwe2ZpbGw6Izc4MmE5MX08L3N0eWxlPjxwYXRoIGQ9Ik0xMjAuOSAyMTQuMkwxOTAuNSAwaDUyLjNsLTk4LjUgMjczLjhIOTguMkwwIDBoNTIuMWw2OC44IDIxNC4yem0yOTEuMi02Mi42SDI5OS42djg0LjJINDMxdjM4SDI1MlYwaDE3Ny43djM4LjRIMjk5LjZWMTE0aDExMi41djM3LjZ6bTgzLjctMTEzLjJINTQ2YzE2LjUuMyAyOSA0LjQgMzcuMyAxMi40IDguMyA4IDEyLjUgMTkuNCAxMi41IDM0IDAgMTQtNC41IDI1LjEtMTMuNSAzMy4yLTkgOC4xLTIxLjYgMTIuMS0zNy42IDEyLjFoLTI3LjF2MjQuMmw4Ni4xIDExOS41aDUxdi0yLjRsLTc3LjItMTA2LjdjMjQuOS01LjUgNDMuMy0yMS43IDUyLjYtMzUuOSA4LjItMTIuNiAxMy4zLTI3LjcgMTMuMy00NiAwLTI2LjgtOC42LTQ3LjQtMjUuOC02MS41QzYwMC41IDcuMSA1NzYuMSAwIDU0NC41IDBoLTk2LjN2MjczLjhoNDcuNiIvPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMDUyLjMgMTU3LjdsLTQxLjUgNjIuNyAyOS43IDUzLjRoODUuMXoiLz48Y2lyY2xlIGNsYXNzPSJzdDAiIGN4PSI4MjcuOSIgY3k9IjI3NC43IiByPSI0MC41Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTEwMzcgMGwtNDcuNiA3NC4yTDk0OSAwaC04NGw4NS4zIDEzNS44LTY3LjEgMTA1LjdjNS43IDkuNSA5LjEgMjAuNSA5LjIgMzIuNGg1MC4xTDExMjEuMyAwSDEwMzd6Ii8+PHBhdGggZD0iTTc2My41IDI3My44Yy4xLTkuOSAyLjUtMTkuMiA2LjYtMjcuNVYzOC40aDg1LjRWMEg2MzguMnYzOC40aDg0LjZ2MjM1LjRoNDAuN3oiLz48L3N2Zz4=" alt="Vert.x Logo"/></a></div><div class="navbar-collapse-button"><span></span><span></span><span></span></div><div class="navbar-right"><div class="navbar-menu"><a class="navbar-menu-item" href="/">Ecosystem</a><a class="navbar-menu-item" href="/introduction-to-vertx-and-reactive/">Intro</a><a class="navbar-menu-item" href="/docs/">Docs</a><a class="navbar-menu-item" href="/">FAQ</a><a class="navbar-menu-item" href="/blog/">Blog</a><a class="navbar-menu-item" href="/">Community</a></div><div class="navbar-social"><span class="navbar-social-version">v4.0.0</span><a href="https://www.youtube.com/results?search_query=vert.x" class="navbar-social-link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-label="YouTube videos related to Vert.x"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"></path></svg></a><a href="https://stackoverflow.com/questions/tagged/vert.x" class="navbar-social-link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-label="Stack Overflow questions related to Vert.x"><path d="M18.986 21.865v-6.404h2.134V24H1.844v-8.539h2.13v6.404h15.012zM6.111 19.731H16.85v-2.137H6.111v2.137zm.259-4.852l10.48 2.189.451-2.07-10.478-2.187-.453 2.068zm1.359-5.056l9.705 4.53.903-1.95-9.706-4.53-.902 1.936v.014zm2.715-4.785l8.217 6.855 1.359-1.62-8.216-6.853-1.35 1.617-.01.001zM15.751 0l-1.746 1.294 6.405 8.604 1.746-1.294L15.749 0h.002z"></path></svg></a><a href="https://gitter.im/eclipse-vertx/vertx-users" class="navbar-social-link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-label="Eclipse Vert.x channel on Gitter"><path d="M8.501 4.001H10.5V24H8.501V4.001zm6.999 0V24h-2V4.001h2zM3.5 0h2.001v15H3.5V0zm15 4.001h2V15h-2V4.001z"></path></svg></a></div></div></div></div></header><div class="page-content"><div class="container"><h1>Easy SSO for Vert.x with Keycloak</h1><h2>TL;DR</h2><p>In this blog post you’ll learn:</p><ul><li>How to im­ple­ment Sin­gle Sign-​on with OpenID Con­nect</li><li>How to use Key­cloak’s OpenID Dis­cov­ery to infer OpenID provider con­fig­u­ra­tion</li><li>How to ob­tain user in­for­ma­tion</li><li>How to check for au­tho­riza­tion</li><li>How to call a Bearer pro­tected ser­vice with an Ac­cess Token</li><li>How to im­ple­ment a form based lo­gout</li></ul><h2>Hello Blog</h2><p>This is my first post in the Vert.x Blog and I must admit that up until now I have never used Vert.x in a real project.
+“Why are you here?”, you might ask… Well I cur­rently have two main hob­bies, learn­ing new things and se­cur­ing apps with <a href="https://www.keycloak.org/">Key­cloak</a>.
+So a few days ago, I stum­bled upon the <a href="https://www.youtube.com/watch?v=LsaXy7SRXMY&amp;list=PLkeCJDaCC2ZsnySdg04Aq9D9FpAZY6K5D">In­tro­duc­tion to Vert.x video se­ries on youtube</a> by <a href="https://twitter.com/infosec812">Deven Phillips</a> and I was im­me­di­ately hooked. Vert.x was a new thing for me, so the next log­i­cal step was to fig­ure out how to se­cure a Vert.x app with Key­cloak.</p><p>For this ex­am­ple I build a small web app with Vert.x that shows how to im­ple­ment Sin­gle Sign-​on (SSO) with Key­cloak
+and OpenID Con­nect, ob­tain in­for­ma­tion about the cur­rent user, check for roles, call bearer pro­tected ser­vices and prop­erly han­dling lo­gout.</p><h2>Keycloak</h2><p><a href="https://www.keycloak.org/">Key­cloak</a> is a Open Source Iden­tity and Ac­cess Man­age­ment so­lu­tion which pro­vides sup­port for OpenID Con­nect
+based Singe-​Sign on, among many other things. I briefly looked for ways to se­cur­ing a Vert.x app with Key­cloak
+and quickly found an <a href="https://vertx.io/blog/vertx-3-and-keycloak-tutorial/">older Vert.x Key­cloak in­te­gra­tion ex­am­ple</a> in this very blog.
+Whilst this is a good start for be­gin­ners, the ex­am­ple con­tains a few is­sues, e.g.:</p><ul><li>It uses hard­coded OpenID provider con­fig­u­ra­tion</li><li>Fea­tures a very sim­plis­tic in­te­gra­tion (for the sake of sim­plic­ity)</li><li>No user in­for­ma­tion used</li><li>No lo­gout func­tion­al­ity is shown</li></ul><p>That some­how nerd­sniped me a bit and so it came that, after a long day of con­sult­ing work, I sat down to cre­ate an ex­am­ple for a com­plete Key­cloak in­te­gra­tion based on <a href="https://vertx.io/docs/vertx-auth-oauth2/java/">Vert.x OpenID Con­nect / OAuth2 Sup­port</a>.</p><p>So let’s get started!</p><h3>Keycloak Setup</h3><p>To se­cure a Vert.x app with Key­cloak we of course need a Key­cloak in­stance. Al­though <a href="https://www.keycloak.org/docs/latest/getting_started/">Key­cloak has a great get­ting started guide</a> I wanted to make it a bit eas­ier to put every­thing to­gether, there­fore I pre­pared a local Key­cloak docker con­tainer <a href="https://github.com/thomasdarimont/vertx-playground/tree/master/keycloak-vertx#start-keycloak-with-the-vertx-realm">as de­scribed here</a> that you can start eas­ily, which comes with all the re­quired con­fig­u­ra­tion in place.</p><p>The pre­con­fig­ured Key­cloak realm named <code>vertx</code> con­tains a <code>demo-client</code> for our Vert.x web app and a set
+of users for test­ing.</p><pre><code class="hljs language-haml">docker run \
+  -<span class="ruby">it \
+</span>  -<span class="ruby">-name vertx-keycloak \
+</span>  -<span class="ruby">-rm \
+</span>  -<span class="ruby">e KEYCLOAK_USER=admin \
+</span>  -<span class="ruby">e KEYCLOAK_PASSWORD=admin \
+</span>  -<span class="ruby">e KEYCLOAK_IMPORT=<span class="hljs-regexp">/tmp/vertx</span>-realm.json \
+</span>  -<span class="ruby">v $PWD/vertx-realm.<span class="hljs-symbol">json:</span>/tmp/vertx-realm.json \
+</span>  -<span class="ruby">p <span class="hljs-number">8080</span><span class="hljs-symbol">:</span><span class="hljs-number">8080</span> \
+</span>  quay.io/keycloak/keycloak:9.0.0
+</code></pre><h2>Vert.x Web App</h2><p>The sim­ple web app con­sists of a sin­gle <code>Verticle</code>, runs on <code>http://localhost:8090</code> and pro­vides a few routes with pro­tected re­sources. <a href="https://github.com/thomasdarimont/vertx-playground/blob/master/keycloak-vertx/src/main/java/demo/MainVerticle.java">You can find the com­plete ex­am­ple here</a>.</p><p>The web app con­tains the fol­low­ing routes with han­dlers:</p><ul><li><code>/</code> - The un­pro­tected index page</li><li><code>/protected</code> - The pro­tected page, which shows a greet­ing mes­sage, users need to login to ac­cess pages be­neath this path.</li><li><code>/protected/user</code> - The pro­tected user page, which shows some in­for­ma­tion about the user.</li><li><code>/protected/admin</code> - The pro­tected admin page, which shows some in­for­ma­tion about the admin, only users with role <code>admin</code> can ac­cess this page.</li><li><code>/protected/userinfo</code> - The pro­tected user­info page, ob­tains user in­for­ma­tion from the bearer token pro­tected user­info end­point in Key­cloak.</li><li><code>/logout</code> - The pro­tected lo­gout re­source, which trig­gers the user lo­gout.</li></ul><h3>Running the app</h3><p>To run the app, we need to build our app via:</p><pre><code class="hljs language-ada">cd keycloak-vertx
+mvn clean <span class="hljs-keyword">package</span>
+<span class="hljs-title"></span></code></pre><p>This cre­ates a runnable jar, which we can run via:</p><pre><code class="hljs language-mipsasm"><span class="hljs-keyword">java </span>-<span class="hljs-keyword">jar </span>target<span class="hljs-comment">/*.jar
+</span></code></pre><p>Note, that you need to start Key­cloak, since our app will try to fetch con­fig­u­ra­tion from Key­cloak.</p><p>If the ap­pli­ca­tion is run­ning, just browse to: <code>http://localhost:8090/</code>.</p><p>An ex­am­ple in­ter­ac­tion with the app can be seen in the fol­low­ing gif:
+<!-- -->![Vert.x Keycloak Integration Demo]<!-- -->({{ site_url }}as­sets/blog/vertx-​keycloak-integration/2020-03-07-​vertx-keycloak-integration.gif)</p><h3>Router, SessionStore and CSRF Protection</h3><p>We start the con­fig­u­ra­tion of our web app by cre­at­ing a <code>Router</code> where we can add cus­tom han­dler func­tions for our routes.
+To prop­erly han­dle the au­then­ti­ca­tion state we need to cre­ate a <code>SessionStore</code> and at­tach it to the <code>Router</code>.
+The <code>SessionStore</code> is used by our OAuth2/OpenID Con­nect in­fra­struc­ture to as­so­ciate au­then­ti­ca­tion in­for­ma­tion with a ses­sion.
+By the way, the <code>SessionStore</code> can also be clus­tered if you need to dis­trib­ute the server-​side state.</p><p>Note that if you want to keep your server state­less but still want to sup­port clus­ter­ing,
+then you could pro­vide your own im­ple­men­ta­tion of a <code>SessionStore</code> which stores the ses­sion in­for­ma­tion
+as an en­crypted cookie on the Client.</p><pre><code class="hljs language-java">Router router = Router.router(vertx);
+
+<span class="hljs-comment">// Store session information on the server side</span>
+SessionStore sessionStore = LocalSessionStore.create(vertx);
+SessionHandler sessionHandler = SessionHandler.create(sessionStore);
+router.route().handler(sessionHandler);
+</code></pre><p>In order to pro­tected against CSRF at­tacks it is good prac­tice to pro­tect HTML forms with a CSRF token.
+We need this for our lo­gout form that we’ll see later.</p><p>To do this we con­fig­ure a <code>CSRFHandler</code> and add it to our <code>Router</code>:</p><pre><code class="hljs language-java"><span class="hljs-comment">// CSRF handler setup required for logout form</span>
+String csrfSecret = <span class="hljs-string">&quot;zwiebelfische&quot;</span>;
+CSRFHandler csrfHandler = CSRFHandler.create(csrfSecret);
+router.route().handler(ctx -&gt; {
+            <span class="hljs-comment">// Ensures that the csrf token request parameter is available for the CsrfHandler</span>
+            <span class="hljs-comment">// after the logout form was submitted.</span>
+            <span class="hljs-comment">// See &quot;Handling HTML forms&quot; https://vertx.io/docs/vertx-core/java/#_handling_requests</span>
+            ctx.request().setExpectMultipart(<span class="hljs-keyword">true</span>);
+            ctx.request().endHandler(v -&gt; csrfHandler.handle(ctx));
+        }
+);
+</code></pre><h3>Keycloak Setup via OpenID Connect Discovery</h3><p>Our app is reg­is­tered as a con­fi­den­tial OpenID Con­nect client with Au­tho­riza­tion Code Flow in Key­cloak,
+thus we need to con­fig­ure <code>client_id</code> and <code>client_secret</code>. Con­fi­den­tial clients are typ­i­cally used
+for server-​side web ap­pli­ca­tions, where one can se­curely store the <code>client_secret</code>. You can find out more
+about<a href="https://www.keycloak.org/docs/latest/server_admin/index.html#_access-type">The dif­fer­ent Client Ac­cess Types</a> in the Key­cloak doc­u­men­ta­tion.</p><p>Since we don’t want to con­fig­ure things like OAuth2 / OpenID Con­nect End­points our­selves, we use Key­cloak’s OpenID Con­nect dis­cov­ery end­point to infer the nec­es­sary Oauth2 / OpenID Con­nect end­point URLs.</p><pre><code class="hljs language-java">String hostname = System.getProperty(<span class="hljs-string">&quot;http.host&quot;</span>, <span class="hljs-string">&quot;localhost&quot;</span>);
+<span class="hljs-keyword">int</span> port = Integer.getInteger(<span class="hljs-string">&quot;http.port&quot;</span>, <span class="hljs-number">8090</span>);
+String baseUrl = String.format(<span class="hljs-string">&quot;http://%s:%d&quot;</span>, hostname, port);
+String oauthCallbackPath = <span class="hljs-string">&quot;/callback&quot;</span>;
+
+OAuth2ClientOptions clientOptions = <span class="hljs-keyword">new</span> OAuth2ClientOptions()
+    .setFlow(OAuth2FlowType.AUTH_CODE)
+    .setSite(System.getProperty(<span class="hljs-string">&quot;oauth2.issuer&quot;</span>, <span class="hljs-string">&quot;http://localhost:8080/auth/realms/vertx&quot;</span>))
+    .setClientID(System.getProperty(<span class="hljs-string">&quot;oauth2.client_id&quot;</span>, <span class="hljs-string">&quot;demo-client&quot;</span>))
+    .setClientSecret(System.getProperty(<span class="hljs-string">&quot;oauth2.client_secret&quot;</span>, <span class="hljs-string">&quot;1f88bd14-7e7f-45e7-be27-d680da6e48d8&quot;</span>));
+
+KeycloakAuth.discover(vertx, clientOptions, asyncResult -&gt; {
+
+    OAuth2Auth oauth2Auth = asyncResult.result();
+
+    <span class="hljs-keyword">if</span> (oauth2Auth == <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> RuntimeException(<span class="hljs-string">&quot;Could not configure Keycloak integration via OpenID Connect Discovery Endpoint. Is Keycloak running?&quot;</span>);
+    }
+
+    AuthHandler oauth2 = OAuth2AuthHandler.create(oauth2Auth, baseUrl + oauthCallbackPath)
+        .setupCallback(router.get(oauthCallbackPath))
+        <span class="hljs-comment">// Additional scopes: openid for OpenID Connect</span>
+        .addAuthority(<span class="hljs-string">&quot;openid&quot;</span>);
+
+    <span class="hljs-comment">// session handler needs access to the authenticated user, otherwise we get an infinite redirect loop</span>
+    sessionHandler.setAuthProvider(oauth2Auth);
+
+    <span class="hljs-comment">// protect resources beneath /protected/* with oauth2 handler</span>
+    router.route(<span class="hljs-string">&quot;/protected/*&quot;</span>).handler(oauth2);
+
+    <span class="hljs-comment">// configure route handlers</span>
+    configureRoutes(router, webClient, oauth2Auth);
+});
+
+getVertx().createHttpServer().requestHandler(router).listen(port);
+</code></pre><h3>Route handlers</h3><p>We con­fig­ure our route han­dlers via <code>configureRoutes</code>:</p><pre><code class="hljs language-java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">configureRoutes</span><span class="hljs-params">(Router router, WebClient webClient, OAuth2Auth oauth2Auth)</span> </span>{
+
+    router.get(<span class="hljs-string">&quot;/&quot;</span>).handler(<span class="hljs-keyword">this</span>::handleIndex);
+
+    router.get(<span class="hljs-string">&quot;/protected&quot;</span>).handler(<span class="hljs-keyword">this</span>::handleGreet);
+    router.get(<span class="hljs-string">&quot;/protected/user&quot;</span>).handler(<span class="hljs-keyword">this</span>::handleUserPage);
+    router.get(<span class="hljs-string">&quot;/protected/admin&quot;</span>).handler(<span class="hljs-keyword">this</span>::handleAdminPage);
+
+    <span class="hljs-comment">// extract discovered userinfo endpoint url</span>
+    String userInfoUrl =  ((OAuth2AuthProviderImpl)oauth2Auth).getConfig().getUserInfoPath();
+    router.get(<span class="hljs-string">&quot;/protected/userinfo&quot;</span>).handler(createUserInfoHandler(webClient, userInfoUrl));
+
+    router.post(<span class="hljs-string">&quot;/logout&quot;</span>).handler(<span class="hljs-keyword">this</span>::handleLogout);
+}
+</code></pre><p>The index han­dler ex­poses an un­pro­tected re­source:</p><pre><code class="hljs language-java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleIndex</span><span class="hljs-params">(RoutingContext ctx)</span> </span>{
+    respondWithOk(ctx, <span class="hljs-string">&quot;text/html&quot;</span>, <span class="hljs-string">&quot;&lt;h1&gt;Welcome to Vert.x Keycloak Example&lt;/h1&gt;&lt;br&gt;&lt;a href=\&quot;/protected\&quot;&gt;Protected&lt;/a&gt;&quot;</span>);
+}
+</code></pre><h3>Extract User Information from the OpenID Connect ID Token</h3><p>Our app ex­poses a sim­ple greet­ing page which shows some in­for­ma­tion about the user and pro­vides links to other pages.</p><p>The user greet­ing han­dler is pro­tected by the Key­cloak OAuth2 / OpenID Con­nect in­te­gra­tion. To show in­for­ma­tion about
+the cur­rent user, we first need to call the <code>ctx.user()</code> method to get an user ob­ject we can work with.
+To ac­cess the OAuth2 token in­for­ma­tion, we need to cast it to <code>OAuth2TokenImpl</code>.</p><p>We can ex­tract the user in­for­ma­tion like the user­name from the <code>IDToken</code> ex­posed by the user ob­ject via <code>user.idToken().getString(&quot;preferred_username&quot;)</code>.
+Note, there are many more claims like (name, email, give­nanme, fam­i­ly­name etc.) avail­able. The <a href="https://openid.net/specs/openid-connect-core-1_0.html#Claims">OpenID Con­nect Core Spec­i­fi­ca­tion</a> con­tains a list of avail­able claims.</p><p>We also gen­er­ate a list with links to the other pages which are sup­ported:</p><pre><code class="hljs language-java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleGreet</span><span class="hljs-params">(RoutingContext ctx)</span> </span>{
+
+    OAuth2TokenImpl oAuth2Token = (OAuth2TokenImpl) ctx.user();
+
+    String username = oAuth2Token.idToken().getString(<span class="hljs-string">&quot;preferred_username&quot;</span>);
+
+    String greeting = String.format(<span class="hljs-string">&quot;&lt;h1&gt;Hi %s @%s&lt;/h1&gt;&lt;ul&gt;&quot;</span> +
+            <span class="hljs-string">&quot;&lt;li&gt;&lt;a href=\&quot;/protected/user\&quot;&gt;User Area&lt;/a&gt;&lt;/li&gt;&quot;</span> +
+            <span class="hljs-string">&quot;&lt;li&gt;&lt;a href=\&quot;/protected/admin\&quot;&gt;Admin Area&lt;/a&gt;&lt;/li&gt;&quot;</span> +
+            <span class="hljs-string">&quot;&lt;li&gt;&lt;a href=\&quot;/protected/userinfo\&quot;&gt;User Info (Remote Call)&lt;/a&gt;&lt;/li&gt;&quot;</span> +
+            <span class="hljs-string">&quot;&lt;/ul&gt;&quot;</span>, username, Instant.now());
+
+    String logoutForm = createLogoutForm(ctx);
+
+    respondWithOk(ctx, <span class="hljs-string">&quot;text/html&quot;</span>, greeting + logoutForm);
+}
+</code></pre><p>The user page han­dler shows in­for­ma­tion about the cur­rent user:</p><pre><code class="hljs language-java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleUserPage</span><span class="hljs-params">(RoutingContext ctx)</span> </span>{
+
+    OAuth2TokenImpl user = (OAuth2TokenImpl) ctx.user();
+
+    String username = user.idToken().getString(<span class="hljs-string">&quot;preferred_username&quot;</span>);
+    String displayName = oAuth2Token.idToken().getString(<span class="hljs-string">&quot;name&quot;</span>);
+
+    String content = String.format(<span class="hljs-string">&quot;&lt;h1&gt;User Page: %s (%s) @%s&lt;/h1&gt;&lt;a href=\&quot;/protected\&quot;&gt;Protected Area&lt;/a&gt;&quot;</span>,
+                                   username, displayName, Instant.now());
+    respondWithOk(ctx, <span class="hljs-string">&quot;text/html&quot;</span>, content);
+}
+</code></pre><h3>Authorization: Checking for Required Roles</h3><p>Our app ex­poses a sim­ple admin page which shows some in­for­ma­tion for ad­mins, which should only be vis­i­ble for ad­mins. Thus we re­quire that users must have the <code>admin</code> realm role in Key­cloak to be able to ac­cess the admin page.</p><p>This is done via a call to <code>user.isAuthorized(&quot;realm:admin&quot;, cb)</code>. The han­dler func­tion <code>cb</code> ex­poses
+the re­sult of the au­tho­riza­tion check via the <code>AsyncResult&lt;Boolean&gt; res</code>. If the cur­rent user has the
+<code>admin</code> role then the re­sult is <code>true</code> oth­er­wise <code>false</code>:</p><pre><code class="hljs language-java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleAdminPage</span><span class="hljs-params">(RoutingContext ctx)</span> </span>{
+
+    OAuth2TokenImpl user = (OAuth2TokenImpl) ctx.user();
+
+    <span class="hljs-comment">// check for realm-role &quot;admin&quot;</span>
+    user.isAuthorized(<span class="hljs-string">&quot;realm:admin&quot;</span>, res -&gt; {
+
+        <span class="hljs-keyword">if</span> (!res.succeeded() || !res.result()) {
+            respondWith(ctx, <span class="hljs-number">403</span>, <span class="hljs-string">&quot;text/html&quot;</span>, <span class="hljs-string">&quot;&lt;h1&gt;Forbidden&lt;/h1&gt;&quot;</span>);
+            <span class="hljs-keyword">return</span>;
+        }
+
+        String username = user.idToken().getString(<span class="hljs-string">&quot;preferred_username&quot;</span>);
+
+        String content = String.format(<span class="hljs-string">&quot;&lt;h1&gt;Admin Page: %s @%s&lt;/h1&gt;&lt;a href=\&quot;/protected\&quot;&gt;Protected Area&lt;/a&gt;&quot;</span>,
+                                        username, Instant.now());
+        respondWithOk(ctx, <span class="hljs-string">&quot;text/html&quot;</span>, content);
+    });
+}
+</code></pre><h4>Call Services protected with Bearer Token</h4><p>Often we need to call other ser­vices from our web app that are pro­tected via Bearer Au­then­ti­ca­tion. This means
+that we need a valid <code>access token</code> to ac­cess a re­source pro­vided on an­other server.</p><p>To demon­strate this we use Key­cloak’s <code>/userinfo</code> end­point as a straw man to demon­strate back­end calls with a bearer token.</p><p>We can ob­tain the cur­rent valid <code>access token</code> via <code>user.opaqueAccessToken()</code>.
+Since we use a <code>WebClient</code> to call the pro­tected end­point, we need to pass the <code>access token</code>
+via the <code>Authorization</code> header by call­ing <code>bearerTokenAuthentication(user.opaqueAccessToken())</code>
+in the cur­rent <code>HttpRequest</code> ob­ject:</p><pre><code class="hljs language-java"><span class="hljs-function"><span class="hljs-keyword">private</span> Handler&lt;RoutingContext&gt; <span class="hljs-title">createUserInfoHandler</span><span class="hljs-params">(WebClient webClient, String userInfoUrl)</span> </span>{
+
+    <span class="hljs-keyword">return</span> (RoutingContext ctx) -&gt; {
+
+        OAuth2TokenImpl user = (OAuth2TokenImpl) ctx.user();
+
+        URI userInfoEndpointUri = URI.create(userInfoUrl);
+        webClient
+            .get(userInfoEndpointUri.getPort(), userInfoEndpointUri.getHost(), userInfoEndpointUri.getPath())
+            <span class="hljs-comment">// use the access token for calls to other services protected via JWT Bearer authentication</span>
+            .bearerTokenAuthentication(user.opaqueAccessToken())
+            .as(BodyCodec.jsonObject())
+            .send(ar -&gt; {
+
+                <span class="hljs-keyword">if</span> (!ar.succeeded()) {
+                    respondWith(ctx, <span class="hljs-number">500</span>, <span class="hljs-string">&quot;application/json&quot;</span>, <span class="hljs-string">&quot;{}&quot;</span>);
+                    <span class="hljs-keyword">return</span>;
+                }
+
+                JsonObject body = ar.result().body();
+                respondWithOk(ctx, <span class="hljs-string">&quot;application/json&quot;</span>, body.encode());
+            });
+    };
+}
+</code></pre><h3>Handle logout</h3><p>Now that we got a work­ing SSO login with au­tho­riza­tion, it would be great if we would allow users to lo­gout again.
+To do this we can lever­age the built-​in OpenID Con­nect lo­gout func­tion­al­ity which can be called via <code>oAuth2Token.logout(cb)</code>.</p><p>The han­dler func­tion <code>cb</code> ex­poses the re­sult of the lo­gout ac­tion via the <code>AsyncResult&lt;Void&gt; res</code>.
+If the lo­gout was suc­cess­full we destory our ses­sion via <code>ctx.session().destroy()</code> and redi­rect the user to the index page.</p><p>The lo­gout form is gen­er­ated via the <code>createLogoutForm</code> method.</p><p>As men­tioned ear­lier, we need to pro­tect our lo­gout form with a CSRF token to pre­vent <a href="https://owasp.org/www-community/attacks/csrf">CSRF at­tacks</a>.</p><p>Note: If we had end­points that would ac­cept data sent to the server, then we’d need to guard those end­points with an CSRF token as well.</p><p>We need to ob­tain the gen­er­ated <code>CSRFToken</code> and ren­der it into a hid­den form input field that’s trans­fered via HTTP POST when the lo­gout form is sub­mit­ted:</p><pre><code class="hljs language-java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleLogout</span><span class="hljs-params">(RoutingContext ctx)</span> </span>{
+
+    OAuth2TokenImpl oAuth2Token = (OAuth2TokenImpl) ctx.user();
+    oAuth2Token.logout(res -&gt; {
+
+        <span class="hljs-keyword">if</span> (!res.succeeded()) {
+            <span class="hljs-comment">// the user might not have been logged out, to know why:</span>
+            respondWith(ctx, <span class="hljs-number">500</span>, <span class="hljs-string">&quot;text/html&quot;</span>, String.format(<span class="hljs-string">&quot;&lt;h1&gt;Logout failed %s&lt;/h1&gt;&quot;</span>, res.cause()));
+            <span class="hljs-keyword">return</span>;
+        }
+
+        ctx.session().destroy();
+        ctx.response().putHeader(<span class="hljs-string">&quot;location&quot;</span>, <span class="hljs-string">&quot;/?logout=true&quot;</span>).setStatusCode(<span class="hljs-number">302</span>).end();
+    });
+}
+
+<span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">createLogoutForm</span><span class="hljs-params">(RoutingContext ctx)</span> </span>{
+
+    String csrfToken = ctx.get(CSRFHandler.DEFAULT_HEADER_NAME);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;&lt;form action=\&quot;/logout\&quot; method=\&quot;post\&quot;&gt;&quot;</span>
+            + String.format(<span class="hljs-string">&quot;&lt;input type=\&quot;hidden\&quot; name=\&quot;%s\&quot; value=\&quot;%s\&quot;&gt;&quot;</span>, CSRFHandler.DEFAULT_HEADER_NAME, csrfToken)
+            + <span class="hljs-string">&quot;&lt;button&gt;Logout&lt;/button&gt;&lt;/form&gt;&quot;</span>;
+}
+</code></pre><p>Some ad­di­tional plumb­ing:</p><pre><code class="hljs language-java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">respondWithOk</span><span class="hljs-params">(RoutingContext ctx, String contentType, String content)</span> </span>{
+    respondWith(ctx, <span class="hljs-number">200</span>, contentType, content);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">respondWith</span><span class="hljs-params">(RoutingContext ctx, <span class="hljs-keyword">int</span> statusCode, String contentType, String content)</span> </span>{
+    ctx.request().response() <span class="hljs-comment">//</span>
+            .putHeader(<span class="hljs-string">&quot;content-type&quot;</span>, contentType) <span class="hljs-comment">//</span>
+            .setStatusCode(statusCode)
+            .end(content);
+}
+</code></pre><h2>More examples</h2><p>This con­cludes the Key­cloak in­te­gra­tion ex­am­ple.</p><p>Check out the com­plete ex­am­ple in <a href="https://github.com/thomasdarimont/vertx-playground/tree/master/keycloak-vertx">keycloak-​vertx Ex­am­ples Repo</a>.</p><p>Thank you for your time, stay tuned for more up­dates! If you want to learn more about Key­cloak, feel free to reach out to me. You can find me via <a href="https://twitter.com/thomasdarimont">thomas­da­ri­mont on twit­ter</a>.</p><p>Happy Hack­ing!</p></div></div><footer><div class="container"><div class="footer-nav-section"><div class="footer-nav-list footer-logo"><a href="/"><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMTI1LjYgMzE1LjIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZT4uc3Qwe2ZpbGw6Izc4MmE5MX08L3N0eWxlPjxwYXRoIGQ9Ik0xMjAuOSAyMTQuMkwxOTAuNSAwaDUyLjNsLTk4LjUgMjczLjhIOTguMkwwIDBoNTIuMWw2OC44IDIxNC4yem0yOTEuMi02Mi42SDI5OS42djg0LjJINDMxdjM4SDI1MlYwaDE3Ny43djM4LjRIMjk5LjZWMTE0aDExMi41djM3LjZ6bTgzLjctMTEzLjJINTQ2YzE2LjUuMyAyOSA0LjQgMzcuMyAxMi40IDguMyA4IDEyLjUgMTkuNCAxMi41IDM0IDAgMTQtNC41IDI1LjEtMTMuNSAzMy4yLTkgOC4xLTIxLjYgMTIuMS0zNy42IDEyLjFoLTI3LjF2MjQuMmw4Ni4xIDExOS41aDUxdi0yLjRsLTc3LjItMTA2LjdjMjQuOS01LjUgNDMuMy0yMS43IDUyLjYtMzUuOSA4LjItMTIuNiAxMy4zLTI3LjcgMTMuMy00NiAwLTI2LjgtOC42LTQ3LjQtMjUuOC02MS41QzYwMC41IDcuMSA1NzYuMSAwIDU0NC41IDBoLTk2LjN2MjczLjhoNDcuNiIvPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMDUyLjMgMTU3LjdsLTQxLjUgNjIuNyAyOS43IDUzLjRoODUuMXoiLz48Y2lyY2xlIGNsYXNzPSJzdDAiIGN4PSI4MjcuOSIgY3k9IjI3NC43IiByPSI0MC41Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTEwMzcgMGwtNDcuNiA3NC4yTDk0OSAwaC04NGw4NS4zIDEzNS44LTY3LjEgMTA1LjdjNS43IDkuNSA5LjEgMjAuNSA5LjIgMzIuNGg1MC4xTDExMjEuMyAwSDEwMzd6Ii8+PHBhdGggZD0iTTc2My41IDI3My44Yy4xLTkuOSAyLjUtMTkuMiA2LjYtMjcuNVYzOC40aDg1LjRWMEg2MzguMnYzOC40aDg0LjZ2MjM1LjRoNDAuN3oiLz48L3N2Zz4=" alt="Vert.x Logo"/></a></div><div class="footer-nav-list"><h5>Eclipse Vert.x</h5><ul class=""><li><a href="/">Ecosystem</a></li><li><a href="/docs/">Docs</a></li><li><a href="/">FAQ</a></li><li><a href="/blog/">Blog</a></li><li><a href="/">Community</a></li></ul></div><div class="footer-nav-list"><h5>Eclipse</h5><ul class=""><li><a href="https://www.eclipse.org/">Eclipse Foundation</a></li><li><a href="https://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li><li><a href="https://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li><li><a href="https://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li><li><a href="https://www.eclipse.org/legal/">Legal Resources</a></li></ul></div></div><div class="footer-copyright"><div class="footer-copyright-remarks">© <!-- -->2020<!-- --> Eclipse Vert.x<br/>Eclipse Vert.x is open source and dual-licensed under the <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">Eclipse Public License 2.0</a> and the <a href="https://www.apache.org/licenses/LICENSE-2.0.html" target="_blank" rel="noopener noreferrer">Apache License 2.0</a>. <br class="footer-copyright-break"/>Website design by <a href="https://michelkraemer.com" target="_blank" rel="noopener noreferrer">Michel Krämer</a>.</div><div class="footer-copyright-eclipse-logo"><a href="https://www.eclipse.org/" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyODEuMyA5MS4xIiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGU+LnN0MHtmaWxsOiNmNzk0MjJ9LnN0MXtmaWxsOiMzZDNjM2J9PC9zdHlsZT48ZyBpZD0iTGF5ZXJfMV8xXyI+PHBhdGggY2xhc3M9InN0MCIgZD0iTTI2NS43IDg0TDI1NyA3M2gtMi43djE3LjdoMy4zdi0xMmw5LjMgMTJoMi4xVjczaC0zLjN2MTF6bS0zMi40LTguM2M0LjIgMCA1LjggMy4zIDUuOCA2LjNzLTEuNiA2LTUuOCA2LTUuNy0zLjEtNS44LTYgMS43LTYuMyA1LjgtNi4zem0wLTNjLTYuMSAwLTkuMSA0LjctOS4xIDkuMyAwIDQuNyAyLjkgOS4xIDkuMSA5LjFzOS00LjYgOS4xLTkuMi0zLTkuMi05LjEtOS4yem0tMjEuMiAxOFY3M2gtMy4zdjE3LjdoMy4zem0tMjMuNiAwaDMuM1Y3Nmg1LjZ2LTNoLTE0LjZ2M2g1LjZsLjEgMTQuN3ptLTE4LjktNi41SDE2M2wzLjMtNy42IDMuMyA3LjZ6bTIuOCA2LjVoMy42TDE2OC4yIDczaC0zLjZsLTggMTcuN2gzLjZsMS41LTMuM2g5LjNsMS40IDMuM3ptLTM4LTE0LjZoMy42YzMuOSAwIDUuNSAyLjggNS41IDUuNS4xIDIuOC0xLjUgNS44LTUuNSA1LjhoLTMuNlY3Ni4xem0zLjctMy4xaC02Ljl2MTcuN2g2LjljNi4yIDAgOC45LTQuNSA4LjktOXMtMi44LTguNy04LjktOC43em0tMjIuNCAxMUwxMDcgNzNoLTIuN3YxNy43aDMuM3YtMTJsOS4zIDEyaDIuMVY3M2gtMy4zdjExek04OC4yIDczdjEwLjJjMCAzLTEuNiA0LjktNC4zIDQuOXMtNC42LTEuNy00LjYtNC45VjczSDc2djEwLjFjMCA1LjMgMy42IDcuOSA3LjkgNy45IDQuNCAwIDcuNy0yLjcgNy43LTcuOVY3M2gtMy40em0tMzMgMi43YzQuMiAwIDUuOCAzLjMgNS44IDYuM3MtMS42IDYtNS44IDYtNS43LTMuMS01LjgtNiAxLjctNi4zIDUuOC02LjN6bTAtM2MtNi4xIDAtOS4xIDQuNy05LjEgOS4zczIuOSA5LjEgOS4xIDkuMSA5LTQuNiA5LjEtOS4yLTMtOS4yLTkuMS05LjJ6bS0yOS43IDE4di02LjVoOC45di0zLjFoLTguOXYtNC44aDkuNFY3M0gyMi4ydjE3LjZoMy4zeiIvPjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yNjkuNCA1NC40aC0yMi4ydi04LjloMjEuNHYtNi45aC0yMS40di05LjFoMjIuMnYtNy4yaC0yOS42djM5LjVoMjkuNnYtNy40em0tNDAtMjUuNmMtMy02LjEtOS40LTcuOC0xNS41LTcuOC03LjMgMC0xNS4zIDMuNC0xNS4zIDExLjUgMCA4LjkgNy40IDExIDE1LjUgMTIgNS4yLjYgOS4xIDIuMSA5LjEgNS44IDAgNC4zLTQuNCA1LjktOS4xIDUuOXMtOS40LTEuOS0xMS4xLTYuM2wtNi4yIDMuMmMyLjkgNy4yIDkuMSA5LjcgMTcuMiA5LjcgOC44IDAgMTYuNi0zLjggMTYuNi0xMi42IDAtOS40LTcuNy0xMS42LTE1LjktMTIuNi00LjctLjYtOC44LTEuNS04LjgtNSAwLTIuOSAyLjYtNS4yIDguMi01LjIgNC4zIDAgOCAyLjIgOS40IDQuNGw1LjktM3pNMTc2IDIyLjJjLTYuMi0uMS0xMi40IDAtMTguNiAwdjM5LjVoNy40VjUwLjFIMTc2YzE5LjQgMCAxOS40LTI3LjkgMC0yNy45em0tMTEuMSA3LjFIMTc2YzkuNSAwIDkuNSAxNCAwIDE0aC0xMS4ybC4xLTE0em0tMTggMzIuNVYyMi4yaC03LjR2MzkuNWw3LjQuMXptLTQ0LTM5LjZ2MzkuNWgyNy43di02LjloLTIwLjNWMjIuMmgtNy40ek05MC43IDUxLjdjLTIuNyAyLjUtNi4yIDQtOS45IDQtOS44IDAtMTMuNS02LjgtMTMuNi0xMy40czQuMS0xMy43IDEzLjYtMTMuN2MzLjUtLjEgNyAxLjMgOS41IDMuN2w1LTQuOGMtMy44LTMuOS05LjEtNi0xNC41LTYtMTQuMyAwLTIxIDEwLjUtMjAuOSAyMC44czYuMyAyMC4zIDIwLjkgMjAuM2M1LjYuMSAxMS0yIDE1LTUuOWwtNS4xLTV6bS0zOSAyLjdIMjkuNXYtOC45aDIxLjR2LTYuOUgyOS41di05LjFoMjIuMnYtNy4ySDIyLjJ2MzkuNWgyOS42bC0uMS03LjR6Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTkuOCAxOC4yQzE4LjggNC4xIDM2LjktLjggNTIuMSA2bC0xLS43QzM1LjctNC42IDE1LjItLjEgNS4zIDE1LjNzLTUuNCAzNS45IDEwIDQ1LjhsMS4xLjZDMy44IDUwLjguOCAzMi4zIDkuOCAxOC4yeiIvPjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yNzIuMiAyNi4xYzAtMi41IDIuMS00LjYgNC42LTQuNiAyLjUgMCA0LjYgMi4xIDQuNiA0LjYgMCAyLjUtMi4xIDQuNi00LjYgNC42LTIuNiAwLTQuNi0yLjEtNC42LTQuNnptOC42IDBjMC0yLjItMS44LTQuMS00LTQuMXMtNC4xIDEuOC00LjEgNC4xYzAgMi4yIDEuNyA0IDMuOSA0LjFoLjFjMi4zIDAgNC4xLTEuOCA0LjEtNC4xem0tNi0yLjVoMi4zYzEuMSAwIDEuOS41IDEuOSAxLjYgMCAuNy0uNCAxLjMtMS4xIDEuNWwxLjIgMS43aC0xLjRsLTEtMS41aC0uN3YxLjVoLTEuMWwtLjEtNC44em0yLjIgMi4zYy41IDAgLjgtLjMuOC0uN3MtLjMtLjctLjgtLjdoLTF2MS4zbDEgLjF6Ii8+PC9nPjwvc3ZnPg==" alt="Eclipse foundation Logo"/></a></div></div></div></footer></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"filename":"2020-03-16-easy-sso-for-vertx-with-keycloak.mdx","date":"2020-03-16","slug":"easy-sso-for-vertx-with-keycloak"},"__N_SSG":true},"page":"/blog/[slug]","query":{"slug":"easy-sso-for-vertx-with-keycloak"},"buildId":"01qy_q7XJ95-UZlSeqei2","nextExport":false,"isFallback":false,"gsp":true}</script><script nomodule="" src="/_next/static/runtime/polyfills-c566c2739b50cd494af2.js"></script><script async="" data-next-page="/blog/[slug]" src="/_next/static/01qy_q7XJ95-UZlSeqei2/pages/blog/%5Bslug%5D.js"></script><script async="" data-next-page="/_app" src="/_next/static/01qy_q7XJ95-UZlSeqei2/pages/_app.js"></script><script src="/_next/static/runtime/webpack-9369c5c69dbf6d4912cb.js" async=""></script><script src="/_next/static/chunks/framework.5fcc7199ef0beb206d2f.js" async=""></script><script src="/_next/static/chunks/commons.5e3e47f192c8968126d4.js" async=""></script><script src="/_next/static/chunks/styles.b3051b078ef01028e031.js" async=""></script><script src="/_next/static/runtime/main-4c61e95228a4db0f3c64.js" async=""></script><script src="/_next/static/chunks/dde3394baf3740af1d1004db0a7c013ea3b6815e.fd1a76189763e4571dc7.js" async=""></script><script src="/_next/static/chunks/3f839b7cabd476c8a8af1b841ce6ff62cb71f462.d12c45c80eacc668aca4.js" async=""></script><script src="/_next/static/01qy_q7XJ95-UZlSeqei2/_buildManifest.js" async=""></script><script src="/_next/static/01qy_q7XJ95-UZlSeqei2/_ssgManifest.js" async=""></script></body></html>
