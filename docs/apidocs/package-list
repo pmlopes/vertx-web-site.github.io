@@ -74,6 +74,7 @@ io.vertx.ext.jdbc.spi
 io.vertx.ext.json.schema
 io.vertx.ext.json.schema.common
 io.vertx.ext.json.schema.common.dsl
+io.vertx.ext.json.schema.draft201909
 io.vertx.ext.json.schema.draft7
 io.vertx.ext.json.schema.draft7.dsl
 io.vertx.ext.json.schema.openapi3
