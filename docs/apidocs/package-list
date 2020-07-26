@@ -39,6 +39,7 @@ io.vertx.core.spi.json
 io.vertx.core.spi.launcher
 io.vertx.core.spi.logging
 io.vertx.core.spi.metrics
+io.vertx.core.spi.observability
 io.vertx.core.spi.resolver
 io.vertx.core.spi.tracing
 io.vertx.core.streams
@@ -92,7 +93,6 @@ io.vertx.ext.shell.session
 io.vertx.ext.shell.spi
 io.vertx.ext.shell.system
 io.vertx.ext.shell.term
-io.vertx.ext.sql
 io.vertx.ext.stomp
 io.vertx.ext.stomp.utils
 io.vertx.ext.sync
@@ -175,6 +175,7 @@ io.vertx.reactivex.core.net
 io.vertx.reactivex.core.parsetools
 io.vertx.reactivex.core.shareddata
 io.vertx.reactivex.core.streams
+io.vertx.reactivex.db2client
 io.vertx.reactivex.ext.auth
 io.vertx.reactivex.ext.auth.authentication
 io.vertx.reactivex.ext.auth.authorization
@@ -269,6 +270,7 @@ io.vertx.rxjava.core.net
 io.vertx.rxjava.core.parsetools
 io.vertx.rxjava.core.shareddata
 io.vertx.rxjava.core.streams
+io.vertx.rxjava.db2client
 io.vertx.rxjava.ext.auth
 io.vertx.rxjava.ext.auth.authentication
 io.vertx.rxjava.ext.auth.authorization
