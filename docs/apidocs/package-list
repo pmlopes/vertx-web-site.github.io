@@ -93,6 +93,7 @@ io.vertx.ext.shell.session
 io.vertx.ext.shell.spi
 io.vertx.ext.shell.system
 io.vertx.ext.shell.term
+io.vertx.ext.sql
 io.vertx.ext.stomp
 io.vertx.ext.stomp.utils
 io.vertx.ext.sync
@@ -134,6 +135,7 @@ io.vertx.ext.web.validation
 io.vertx.ext.web.validation.builder
 io.vertx.grpc
 io.vertx.grpc.stub
+io.vertx.jdbcclient
 io.vertx.junit5
 io.vertx.junit5.rxjava
 io.vertx.junit5.rxjava2
@@ -235,6 +237,7 @@ io.vertx.reactivex.ext.web.templ.pebble
 io.vertx.reactivex.ext.web.templ.rocker
 io.vertx.reactivex.ext.web.templ.thymeleaf
 io.vertx.reactivex.ext.web.validation
+io.vertx.reactivex.jdbcclient
 io.vertx.reactivex.kafka.admin
 io.vertx.reactivex.kafka.client.consumer
 io.vertx.reactivex.kafka.client.producer
@@ -330,6 +333,7 @@ io.vertx.rxjava.ext.web.templ.pebble
 io.vertx.rxjava.ext.web.templ.rocker
 io.vertx.rxjava.ext.web.templ.thymeleaf
 io.vertx.rxjava.ext.web.validation
+io.vertx.rxjava.jdbcclient
 io.vertx.rxjava.kafka.admin
 io.vertx.rxjava.kafka.client.consumer
 io.vertx.rxjava.kafka.client.producer
