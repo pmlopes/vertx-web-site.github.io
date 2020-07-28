@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{"51x1":function(n,o,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/docs",function(){return u("kDGG")}])},kDGG:function(n,o,u){"use strict";u.r(o);var t=u("7nSn");u.d(o,"default",(function(){return t.default}))}},[["51x1",0,2,1,4,5,3]]]);
