@@ -144,6 +144,7 @@ io.vertx.kafka.client.common
 io.vertx.kafka.client.consumer
 io.vertx.kafka.client.producer
 io.vertx.kafka.client.serialization
+io.vertx.kotlin.core
 io.vertx.lang.groovy
 io.vertx.maven
 io.vertx.maven.resolver
@@ -253,6 +254,7 @@ io.vertx.reactivex.servicediscovery
 io.vertx.reactivex.servicediscovery.spi
 io.vertx.reactivex.servicediscovery.types
 io.vertx.reactivex.sqlclient
+io.vertx.reactivex.sqlclient.desc
 io.vertx.reactivex.sqlclient.spi
 io.vertx.redis.client
 io.vertx.rxjava.amqp
@@ -349,6 +351,7 @@ io.vertx.rxjava.servicediscovery
 io.vertx.rxjava.servicediscovery.spi
 io.vertx.rxjava.servicediscovery.types
 io.vertx.rxjava.sqlclient
+io.vertx.rxjava.sqlclient.desc
 io.vertx.rxjava.sqlclient.spi
 io.vertx.service
 io.vertx.servicediscovery
@@ -366,8 +369,10 @@ io.vertx.serviceproxy.generator.model
 io.vertx.serviceproxy.sockjs.generator
 io.vertx.spi.cluster.hazelcast
 io.vertx.spi.cluster.ignite
+io.vertx.spi.cluster.ignite.util
 io.vertx.sqlclient
 io.vertx.sqlclient.data
+io.vertx.sqlclient.desc
 io.vertx.sqlclient.spi
 io.vertx.sqlclient.templates
 io.vertx.sqlclient.templates.annotations
