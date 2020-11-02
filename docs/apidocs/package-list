@@ -44,6 +44,8 @@ io.vertx.core.spi.resolver
 io.vertx.core.spi.tracing
 io.vertx.core.streams
 io.vertx.core.tracing
+io.vertx.db2client
+io.vertx.db2client.spi
 io.vertx.ext.auth
 io.vertx.ext.auth.authentication
 io.vertx.ext.auth.authorization
@@ -141,6 +143,7 @@ io.vertx.junit5.rxjava
 io.vertx.junit5.rxjava2
 io.vertx.kafka.admin
 io.vertx.kafka.client.common
+io.vertx.kafka.client.common.tracing
 io.vertx.kafka.client.consumer
 io.vertx.kafka.client.producer
 io.vertx.kafka.client.serialization
@@ -187,12 +190,15 @@ io.vertx.reactivex.ext.auth.htpasswd
 io.vertx.reactivex.ext.auth.jdbc
 io.vertx.reactivex.ext.auth.jwt
 io.vertx.reactivex.ext.auth.jwt.authorization
+io.vertx.reactivex.ext.auth.ldap
 io.vertx.reactivex.ext.auth.mongo
 io.vertx.reactivex.ext.auth.oauth2
 io.vertx.reactivex.ext.auth.oauth2.authorization
 io.vertx.reactivex.ext.auth.oauth2.providers
 io.vertx.reactivex.ext.auth.oauth2.rbac
+io.vertx.reactivex.ext.auth.properties
 io.vertx.reactivex.ext.auth.shiro
+io.vertx.reactivex.ext.auth.sqlclient
 io.vertx.reactivex.ext.auth.webauthn
 io.vertx.reactivex.ext.bridge
 io.vertx.reactivex.ext.consul
@@ -256,6 +262,7 @@ io.vertx.reactivex.servicediscovery.types
 io.vertx.reactivex.sqlclient
 io.vertx.reactivex.sqlclient.desc
 io.vertx.reactivex.sqlclient.spi
+io.vertx.reactivex.sqlclient.templates
 io.vertx.redis.client
 io.vertx.rxjava.amqp
 io.vertx.rxjava.cassandra
@@ -284,12 +291,15 @@ io.vertx.rxjava.ext.auth.htpasswd
 io.vertx.rxjava.ext.auth.jdbc
 io.vertx.rxjava.ext.auth.jwt
 io.vertx.rxjava.ext.auth.jwt.authorization
+io.vertx.rxjava.ext.auth.ldap
 io.vertx.rxjava.ext.auth.mongo
 io.vertx.rxjava.ext.auth.oauth2
 io.vertx.rxjava.ext.auth.oauth2.authorization
 io.vertx.rxjava.ext.auth.oauth2.providers
 io.vertx.rxjava.ext.auth.oauth2.rbac
+io.vertx.rxjava.ext.auth.properties
 io.vertx.rxjava.ext.auth.shiro
+io.vertx.rxjava.ext.auth.sqlclient
 io.vertx.rxjava.ext.auth.webauthn
 io.vertx.rxjava.ext.bridge
 io.vertx.rxjava.ext.consul
