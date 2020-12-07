@@ -136,8 +136,6 @@ io.vertx.json.schema.draft201909
 io.vertx.json.schema.draft7
 io.vertx.json.schema.draft7.dsl
 io.vertx.json.schema.openapi3
-io.vertx.json.schema.reactivex
-io.vertx.json.schema.rxjava
 io.vertx.junit5
 io.vertx.junit5.rxjava
 io.vertx.junit5.rxjava2
@@ -245,6 +243,7 @@ io.vertx.reactivex.ext.web.templ.rocker
 io.vertx.reactivex.ext.web.templ.thymeleaf
 io.vertx.reactivex.ext.web.validation
 io.vertx.reactivex.jdbcclient
+io.vertx.reactivex.json.schema
 io.vertx.reactivex.kafka.admin
 io.vertx.reactivex.kafka.client.consumer
 io.vertx.reactivex.kafka.client.producer
@@ -346,6 +345,7 @@ io.vertx.rxjava.ext.web.templ.rocker
 io.vertx.rxjava.ext.web.templ.thymeleaf
 io.vertx.rxjava.ext.web.validation
 io.vertx.rxjava.jdbcclient
+io.vertx.rxjava.json.schema
 io.vertx.rxjava.kafka.admin
 io.vertx.rxjava.kafka.client.consumer
 io.vertx.rxjava.kafka.client.producer
@@ -380,6 +380,7 @@ io.vertx.serviceproxy.sockjs.generator
 io.vertx.spi.cluster.hazelcast
 io.vertx.spi.cluster.ignite
 io.vertx.spi.cluster.ignite.util
+io.vertx.spi.cluster.zookeeper
 io.vertx.sqlclient
 io.vertx.sqlclient.data
 io.vertx.sqlclient.desc
