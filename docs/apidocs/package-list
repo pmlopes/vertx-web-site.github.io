@@ -147,6 +147,8 @@ io.vertx.kafka.client.producer
 io.vertx.kafka.client.serialization
 io.vertx.kotlin.core
 io.vertx.lang.groovy
+io.vertx.lang.reactivex
+io.vertx.lang.rxjava
 io.vertx.maven
 io.vertx.maven.resolver
 io.vertx.micrometer
@@ -161,6 +163,7 @@ io.vertx.pgclient.data
 io.vertx.pgclient.pubsub
 io.vertx.pgclient.spi
 io.vertx.rabbitmq
+io.vertx.reactivex
 io.vertx.reactivex.amqp
 io.vertx.reactivex.cassandra
 io.vertx.reactivex.circuitbreaker
@@ -233,6 +236,7 @@ io.vertx.reactivex.ext.web.handler.graphql.dataloader
 io.vertx.reactivex.ext.web.handler.graphql.schema
 io.vertx.reactivex.ext.web.handler.sockjs
 io.vertx.reactivex.ext.web.multipart
+io.vertx.reactivex.ext.web.openapi
 io.vertx.reactivex.ext.web.sstore
 io.vertx.reactivex.ext.web.templ.freemarker
 io.vertx.reactivex.ext.web.templ.handlebars
@@ -263,6 +267,7 @@ io.vertx.reactivex.sqlclient.desc
 io.vertx.reactivex.sqlclient.spi
 io.vertx.reactivex.sqlclient.templates
 io.vertx.redis.client
+io.vertx.rx.java
 io.vertx.rxjava.amqp
 io.vertx.rxjava.cassandra
 io.vertx.rxjava.circuitbreaker
