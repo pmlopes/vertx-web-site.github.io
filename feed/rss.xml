@@ -4,7 +4,7 @@
         <title>Vert.x</title>
         <link>https://vertx.io</link>
         <description>Vert.x is a tool-kit for building reactive applications on the JVM</description>
-        <lastBuildDate>Thu, 18 Mar 2021 11:25:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 Mar 2021 13:01:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Vert.x</generator>
         <language>en</language>
@@ -50,6 +50,14 @@
             <pubDate>Fri, 05 Feb 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Eclipse Vert.x version 4.0.2 has just been released. It fixes quite a few bugs that have been reported by the community.]]></description>
             <category>releases</category>
+        </item>
+        <item>
+            <title><![CDATA[Things to keep in mind concerning CSRF attacks]]></title>
+            <link>https://vertx.io/blog/eclipse-vert-x-CSRF-concerns</link>
+            <guid>https://vertx.io/blog/eclipse-vert-x-CSRF-concerns</guid>
+            <pubDate>Sat, 23 Jan 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Eclipse Vert.x like most frameworks provides an anti-CSRF defense. However, no framework can prevent all attack vectors that exist in the web. Therefore, developers need to be aware of some dangers and common attack vectors concerning CSRF defenses.]]></description>
+            <category>guides</category>
         </item>
         <item>
             <title><![CDATA[Eclipse Vert.x 3.9.5 released!]]></title>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vertx.io</id>
     <title>Vert.x</title>
-    <updated>2021-03-18T11:25:00.516Z</updated>
+    <updated>2021-03-23T13:01:22.721Z</updated>
     <generator>Vert.x</generator>
     <link rel="alternate" href="https://vertx.io"/>
     <link rel="self" href="https://vertx.io/feed/atom.xml"/>
@@ -78,6 +78,18 @@
             <uri>https://github.com/vietj</uri>
         </author>
         <category label="releases"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Things to keep in mind concerning CSRF attacks]]></title>
+        <id>https://vertx.io/blog/eclipse-vert-x-CSRF-concerns</id>
+        <link href="https://vertx.io/blog/eclipse-vert-x-CSRF-concerns"/>
+        <updated>2021-01-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Eclipse Vert.x like most frameworks provides an anti-CSRF defense. However, no framework can prevent all attack vectors that exist in the web. Therefore, developers need to be aware of some dangers and common attack vectors concerning CSRF defenses.]]></summary>
+        <author>
+            <name>Xhelal Likaj</name>
+            <uri>https://github.com/xhlika</uri>
+        </author>
+        <category label="guides"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Eclipse Vert.x 3.9.5 released!]]></title>

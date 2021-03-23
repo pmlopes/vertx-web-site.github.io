@@ -76,6 +76,20 @@
             ]
         },
         {
+            "id": "https://vertx.io/blog/eclipse-vert-x-CSRF-concerns",
+            "url": "https://vertx.io/blog/eclipse-vert-x-CSRF-concerns",
+            "title": "Things to keep in mind concerning CSRF attacks",
+            "summary": "Eclipse Vert.x like most frameworks provides an anti-CSRF defense. However, no framework can prevent all attack vectors that exist in the web. Therefore, developers need to be aware of some dangers and common attack vectors concerning CSRF defenses.",
+            "date_modified": "2021-01-23T00:00:00.000Z",
+            "author": {
+                "name": "Xhelal Likaj",
+                "url": "https://github.com/xhlika"
+            },
+            "tags": [
+                "guides"
+            ]
+        },
+        {
             "id": "https://vertx.io/blog/eclipse-vert-x-3-9-5",
             "url": "https://vertx.io/blog/eclipse-vert-x-3-9-5",
             "title": "Eclipse Vert.x 3.9.5 released!",
