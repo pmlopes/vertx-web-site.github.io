@@ -6,11 +6,11 @@
     "description": "Vert.x is a tool-kit for building reactive applications on the JVM",
     "items": [
         {
-            "id": "https://vertx.io/blog/whats-new-in-vert-x-4",
-            "url": "https://vertx.io/blog/whats-new-in-vert-x-4",
-            "title": "What's new in Vert.x 4",
-            "summary": "See an overview of all new and exciting features in Vert.x 4, including futures, distributed tracing, reactive database clients, SQL templating, and more.",
-            "date_modified": "2020-12-06T00:00:00.000Z",
+            "id": "https://vertx.io/blog/whats-new-in-vert-x-4-1",
+            "url": "https://vertx.io/blog/whats-new-in-vert-x-4-1",
+            "title": "What's new in Vert.x 4.1",
+            "summary": "See an overview of all new and exciting features in Vert.x 4.1, including futures, distributed tracing, reactive database clients, SQL templating, and more.",
+            "date_modified": "2021-05-20T00:00:00.000Z",
             "author": {
                 "name": "Julien Viet",
                 "url": "https://github.com/vietj"
@@ -137,6 +137,20 @@
             "title": "Eclipse Vert.x 4 released!",
             "summary": "Vert.x 4 has just been released and it’s the best thing since sliced buffers.",
             "date_modified": "2020-12-09T00:00:00.000Z",
+            "author": {
+                "name": "Julien Viet",
+                "url": "https://github.com/vietj"
+            },
+            "tags": [
+                "releases"
+            ]
+        },
+        {
+            "id": "https://vertx.io/blog/whats-new-in-vert-x-4",
+            "url": "https://vertx.io/blog/whats-new-in-vert-x-4",
+            "title": "What's new in Vert.x 4",
+            "summary": "See an overview of all new and exciting features in Vert.x 4, including futures, distributed tracing, reactive database clients, SQL templating, and more.",
+            "date_modified": "2020-12-06T00:00:00.000Z",
             "author": {
                 "name": "Julien Viet",
                 "url": "https://github.com/vietj"

@@ -4,7 +4,7 @@
         <title>Vert.x</title>
         <link>https://vertx.io</link>
         <description>Vert.x is a tool-kit for building reactive applications on the JVM</description>
-        <lastBuildDate>Tue, 18 May 2021 07:26:24 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 20 May 2021 16:01:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Vert.x</generator>
         <language>en</language>
@@ -12,11 +12,11 @@
         <category>guides</category>
         <category>news</category>
         <item>
-            <title><![CDATA[What's new in Vert.x 4]]></title>
-            <link>https://vertx.io/blog/whats-new-in-vert-x-4</link>
-            <guid>https://vertx.io/blog/whats-new-in-vert-x-4</guid>
-            <pubDate>Sun, 06 Dec 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[See an overview of all new and exciting features in Vert.x 4, including futures, distributed tracing, reactive database clients, SQL templating, and more.]]></description>
+            <title><![CDATA[What's new in Vert.x 4.1]]></title>
+            <link>https://vertx.io/blog/whats-new-in-vert-x-4-1</link>
+            <guid>https://vertx.io/blog/whats-new-in-vert-x-4-1</guid>
+            <pubDate>Thu, 20 May 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[See an overview of all new and exciting features in Vert.x 4.1, including futures, distributed tracing, reactive database clients, SQL templating, and more.]]></description>
             <category>releases</category>
         </item>
         <item>
@@ -89,6 +89,14 @@
             <guid>https://vertx.io/blog/eclipse-vert-x-4-released</guid>
             <pubDate>Wed, 09 Dec 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Vert.x 4 has just been released and it’s the best thing since sliced buffers.]]></description>
+            <category>releases</category>
+        </item>
+        <item>
+            <title><![CDATA[What's new in Vert.x 4]]></title>
+            <link>https://vertx.io/blog/whats-new-in-vert-x-4</link>
+            <guid>https://vertx.io/blog/whats-new-in-vert-x-4</guid>
+            <pubDate>Sun, 06 Dec 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[See an overview of all new and exciting features in Vert.x 4, including futures, distributed tracing, reactive database clients, SQL templating, and more.]]></description>
             <category>releases</category>
         </item>
         <item>
