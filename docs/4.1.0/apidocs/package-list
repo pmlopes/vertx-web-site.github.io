@@ -144,6 +144,7 @@ io.vertx.json.schema.openapi3
 io.vertx.junit5
 io.vertx.junit5.rxjava
 io.vertx.junit5.rxjava2
+io.vertx.junit5.rxjava3
 io.vertx.kafka.admin
 io.vertx.kafka.client.common
 io.vertx.kafka.client.common.tracing
