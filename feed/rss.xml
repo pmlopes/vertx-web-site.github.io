@@ -4,7 +4,7 @@
         <title>Vert.x</title>
         <link>https://vertx.io</link>
         <description>Vert.x is a tool-kit for building reactive applications on the JVM</description>
-        <lastBuildDate>Thu, 01 Jul 2021 12:27:49 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Jul 2021 12:57:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Vert.x</generator>
         <language>en</language>
@@ -28,6 +28,14 @@
             <category>guides</category>
         </item>
         <item>
+            <title><![CDATA[Eclipse Vert.x 4.1.1 released!]]></title>
+            <link>https://vertx.io/blog/eclipse-vert-x-4-1-1</link>
+            <guid>https://vertx.io/blog/eclipse-vert-x-4-1-1</guid>
+            <pubDate>Thu, 01 Jul 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Eclipse Vert.x version 4.1.1 has just been released. It fixes quite a few bugs that have been reported by the community and provides a couple of features]]></description>
+            <category>releases</category>
+        </item>
+        <item>
             <title><![CDATA[Eclipse Vert.x 3.9.8 released!]]></title>
             <link>https://vertx.io/blog/eclipse-vert-x-3-9-8</link>
             <guid>https://vertx.io/blog/eclipse-vert-x-3-9-8</guid>
@@ -41,14 +49,6 @@
             <guid>https://vertx.io/blog/eclipse-vert-x-4-1-0</guid>
             <pubDate>Tue, 01 Jun 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Eclipse Vert.x version 4.1.0 has just been released. It comes with a set of new exciting features!]]></description>
-            <category>releases</category>
-        </item>
-        <item>
-            <title><![CDATA[Eclipse Vert.x 4.1.1 released!]]></title>
-            <link>https://vertx.io/blog/eclipse-vert-x-4-1-1</link>
-            <guid>https://vertx.io/blog/eclipse-vert-x-4-1-1</guid>
-            <pubDate>Tue, 01 Jun 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Eclipse Vert.x version 4.1.1 has just been released. It fixes quite a few bugs that have been reported by the community and provides a couple of features]]></description>
             <category>releases</category>
         </item>
         <item>
