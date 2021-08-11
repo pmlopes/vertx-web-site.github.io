@@ -4,7 +4,7 @@
         <title>Vert.x</title>
         <link>https://vertx.io</link>
         <description>Vert.x is a tool-kit for building reactive applications on the JVM</description>
-        <lastBuildDate>Tue, 20 Jul 2021 14:27:56 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Aug 2021 13:40:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Vert.x</generator>
         <language>en</language>
@@ -25,6 +25,14 @@
             <guid>https://vertx.io/blog/from-vert-x-3-to-vert-x-4</guid>
             <pubDate>Wed, 02 Dec 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[We provide a clear and well-documented migration path from Vert.x 3.9 to Vert.x 4. Existing users will feel at home with the new version.]]></description>
+            <category>guides</category>
+        </item>
+        <item>
+            <title><![CDATA[Dynamic database pool configuration with Vert.x SQL Client]]></title>
+            <link>https://vertx.io/blog/dynamic-db-pool-config-with-sql-client</link>
+            <guid>https://vertx.io/blog/dynamic-db-pool-config-with-sql-client</guid>
+            <pubDate>Wed, 11 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[You will learn how to achieve dynamic database configuration of the Vert.x SQL Client pool]]></description>
             <category>guides</category>
         </item>
         <item>

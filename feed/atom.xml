@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vertx.io</id>
     <title>Vert.x</title>
-    <updated>2021-07-20T14:27:56.137Z</updated>
+    <updated>2021-08-11T13:40:58.500Z</updated>
     <generator>Vert.x</generator>
     <link rel="alternate" href="https://vertx.io"/>
     <link rel="self" href="https://vertx.io/feed/atom.xml"/>
@@ -29,6 +29,18 @@
         <link href="https://vertx.io/blog/from-vert-x-3-to-vert-x-4"/>
         <updated>2020-12-02T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[We provide a clear and well-documented migration path from Vert.x 3.9 to Vert.x 4. Existing users will feel at home with the new version.]]></summary>
+        <author>
+            <name>Julien Viet</name>
+            <uri>https://github.com/vietj</uri>
+        </author>
+        <category label="guides"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dynamic database pool configuration with Vert.x SQL Client]]></title>
+        <id>https://vertx.io/blog/dynamic-db-pool-config-with-sql-client</id>
+        <link href="https://vertx.io/blog/dynamic-db-pool-config-with-sql-client"/>
+        <updated>2021-08-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[You will learn how to achieve dynamic database configuration of the Vert.x SQL Client pool]]></summary>
         <author>
             <name>Julien Viet</name>
             <uri>https://github.com/vietj</uri>

@@ -34,6 +34,20 @@
             ]
         },
         {
+            "id": "https://vertx.io/blog/dynamic-db-pool-config-with-sql-client",
+            "url": "https://vertx.io/blog/dynamic-db-pool-config-with-sql-client",
+            "title": "Dynamic database pool configuration with Vert.x SQL Client",
+            "summary": "You will learn how to achieve dynamic database configuration of the Vert.x SQL Client pool",
+            "date_modified": "2021-08-11T00:00:00.000Z",
+            "author": {
+                "name": "Julien Viet",
+                "url": "https://github.com/vietj"
+            },
+            "tags": [
+                "guides"
+            ]
+        },
+        {
             "id": "https://vertx.io/blog/eclipse-vert-x-4-1-2",
             "url": "https://vertx.io/blog/eclipse-vert-x-4-1-2",
             "title": "Eclipse Vert.x 4.1.2 released!",
