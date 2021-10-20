@@ -34,6 +34,20 @@
             ]
         },
         {
+            "id": "https://vertx.io/blog/eclipse-vertx-4-2-CR1-released",
+            "url": "https://vertx.io/blog/eclipse-vertx-4-2-CR1-released",
+            "title": "Eclipse Vert.x 4.2.0.CR1 released!",
+            "summary": "The first candidate release of the upcoming Vert.x 4.2 has just been released. We\n  consider it feature complete and invite the community to test it.",
+            "date_modified": "2021-10-20T00:00:00.000Z",
+            "author": {
+                "name": "Julien Viet",
+                "url": "https://github.com/vietj"
+            },
+            "tags": [
+                "releases"
+            ]
+        },
+        {
             "id": "https://vertx.io/blog/eclipse-vert-x-4-1-5",
             "url": "https://vertx.io/blog/eclipse-vert-x-4-1-5",
             "title": "Eclipse Vert.x 4.1.5 released!",

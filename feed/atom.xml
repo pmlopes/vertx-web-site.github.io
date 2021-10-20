@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vertx.io</id>
     <title>Vert.x</title>
-    <updated>2021-10-07T09:30:02.478Z</updated>
+    <updated>2021-10-20T07:41:43.336Z</updated>
     <generator>Vert.x</generator>
     <link rel="alternate" href="https://vertx.io"/>
     <link rel="self" href="https://vertx.io/feed/atom.xml"/>
@@ -34,6 +34,19 @@
             <uri>https://github.com/vietj</uri>
         </author>
         <category label="guides"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Eclipse Vert.x 4.2.0.CR1 released!]]></title>
+        <id>https://vertx.io/blog/eclipse-vertx-4-2-CR1-released</id>
+        <link href="https://vertx.io/blog/eclipse-vertx-4-2-CR1-released"/>
+        <updated>2021-10-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The first candidate release of the upcoming Vert.x 4.2 has just been released. We
+  consider it feature complete and invite the community to test it.]]></summary>
+        <author>
+            <name>Julien Viet</name>
+            <uri>https://github.com/vietj</uri>
+        </author>
+        <category label="releases"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Eclipse Vert.x 4.1.5 released!]]></title>
