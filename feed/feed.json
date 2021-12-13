@@ -34,6 +34,20 @@
             ]
         },
         {
+            "id": "https://vertx.io/blog/vertx-log4j-2",
+            "url": "https://vertx.io/blog/vertx-log4j-2",
+            "title": "Eclipse Vert.x and Log4j 2 CVE-2021-44228",
+            "summary": "A recent [CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228) has been disclosed that affects the Log4j 2 library. The Vert.x project can *optionally* use this library for logging but *does not ship* this library and therefore is not affected by this CVE.",
+            "date_modified": "2021-12-13T00:00:00.000Z",
+            "author": {
+                "name": "Julien Viet",
+                "url": "https://github.com/vietj"
+            },
+            "tags": [
+                "security"
+            ]
+        },
+        {
             "id": "https://vertx.io/blog/eclipse-vert-x-3-9-10",
             "url": "https://vertx.io/blog/eclipse-vert-x-3-9-10",
             "title": "Eclipse Vert.x 3.9.10 released!",
@@ -258,10 +272,10 @@
             ]
         },
         {
-            "id": "https://vertx.io/blog/eclipse-vert-x-4-1-CR1-released",
-            "url": "https://vertx.io/blog/eclipse-vert-x-4-1-CR1-released",
-            "title": "Eclipse Vert.x 4.1.0.CR1 released!",
-            "summary": "The first candidate release of the upcoming Vert.x 4.1 has just been released. We consider it feature complete and invite the community to test it.",
+            "id": "https://vertx.io/blog/whats-new-in-vert-x-4-1",
+            "url": "https://vertx.io/blog/whats-new-in-vert-x-4-1",
+            "title": "What's new in Vert.x 4.1",
+            "summary": "See an overview of all new and exciting features in Vert.x 4.1, including Vert.x HTTP proxy, RxJava 3, Open Telemetry, and more.",
             "date_modified": "2021-05-21T00:00:00.000Z",
             "author": {
                 "name": "Julien Viet",
@@ -272,10 +286,10 @@
             ]
         },
         {
-            "id": "https://vertx.io/blog/whats-new-in-vert-x-4-1",
-            "url": "https://vertx.io/blog/whats-new-in-vert-x-4-1",
-            "title": "What's new in Vert.x 4.1",
-            "summary": "See an overview of all new and exciting features in Vert.x 4.1, including Vert.x HTTP proxy, RxJava 3, Open Telemetry, and more.",
+            "id": "https://vertx.io/blog/eclipse-vert-x-4-1-CR1-released",
+            "url": "https://vertx.io/blog/eclipse-vert-x-4-1-CR1-released",
+            "title": "Eclipse Vert.x 4.1.0.CR1 released!",
+            "summary": "The first candidate release of the upcoming Vert.x 4.1 has just been released. We consider it feature complete and invite the community to test it.",
             "date_modified": "2021-05-21T00:00:00.000Z",
             "author": {
                 "name": "Julien Viet",
