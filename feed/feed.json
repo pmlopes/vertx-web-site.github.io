@@ -37,7 +37,7 @@
             "id": "https://vertx.io/blog/CVE-2021-44228",
             "url": "https://vertx.io/blog/CVE-2021-44228",
             "title": "Eclipse Vert.x and Log4j 2 CVE-2021-44228",
-            "summary": "A recent [CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228) has been disclosed that affects the Log4j 2 library. The Vert.x project can *optionally* use this library for logging but *does not ship* this library and therefore is not affected by this CVE.",
+            "summary": "A recent CVE-2021-44228 has been disclosed that affects the Log4j 2 library. The Vert.x project can optionally use Log4j but does not ship it and therefore is not affected by this CVE.",
             "date_modified": "2021-12-13T00:00:00.000Z",
             "author": {
                 "name": "Julien Viet",

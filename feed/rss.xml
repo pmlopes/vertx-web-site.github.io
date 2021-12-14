@@ -4,7 +4,7 @@
         <title>Vert.x</title>
         <link>https://vertx.io</link>
         <description>Vert.x is a tool-kit for building reactive applications on the JVM</description>
-        <lastBuildDate>Mon, 13 Dec 2021 18:03:49 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 14 Dec 2021 12:20:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Vert.x</generator>
         <language>en</language>
@@ -33,7 +33,7 @@
             <link>https://vertx.io/blog/CVE-2021-44228</link>
             <guid>https://vertx.io/blog/CVE-2021-44228</guid>
             <pubDate>Mon, 13 Dec 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[A recent [CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228) has been disclosed that affects the Log4j 2 library. The Vert.x project can *optionally* use this library for logging but *does not ship* this library and therefore is not affected by this CVE.]]></description>
+            <description><![CDATA[A recent CVE-2021-44228 has been disclosed that affects the Log4j 2 library. The Vert.x project can optionally use Log4j but does not ship it and therefore is not affected by this CVE.]]></description>
             <category>security</category>
         </item>
         <item>
