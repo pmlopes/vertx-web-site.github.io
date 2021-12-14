@@ -90,6 +90,20 @@
             ]
         },
         {
+            "id": "https://vertx.io/blog/eclipse-vert-x-4-1-7",
+            "url": "https://vertx.io/blog/eclipse-vert-x-4-1-7",
+            "title": "Eclipse Vert.x 4.1.7 released!",
+            "summary": "Eclipse Vert.x version 4.1.7 has just been released.",
+            "date_modified": "2021-11-04T00:00:00.000Z",
+            "author": {
+                "name": "Julien Viet",
+                "url": "https://github.com/vietj"
+            },
+            "tags": [
+                "releases"
+            ]
+        },
+        {
             "id": "https://vertx.io/blog/eclipse-vert-x-4-2-1",
             "url": "https://vertx.io/blog/eclipse-vert-x-4-2-1",
             "title": "Eclipse Vert.x 4.2.1 released!",
